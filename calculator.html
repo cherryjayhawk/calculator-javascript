@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      input[type="button"] {
+        width: 40px;
+        height: 40px;
+        border: 1px solid;
+        /* padding: 15px 32px; */
+        text-align: center;
+        /* text-decoration: none; */
+        display: inline-block;
+        font-size: 16px;
+        /* margin: 4px 2px; */
+        cursor: pointer;
+      }
+    </style>
+
+    <script src="calculator.js"></script>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <input type="text" id="result" readonly><br><br>
+    <input type="button" value="1" onclick="calculator('1')">
+    <input type="button" value="2" onclick="calculator('2')">
+    <input type="button" value="3" onclick="calculator('3')">
+    <input type="button" value="+" onclick="calculator('+')"><br>
+    <input type="button" value="4" onclick="calculator('4')">
+    <input type="button" value="5" onclick="calculator('5')">
+    <input type="button" value="6" onclick="calculator('6')">
+    <input type="button" value="-" onclick="calculator('-')"><br>
+    <input type="button" value="7" onclick="calculator('7')">
+    <input type="button" value="8" onclick="calculator('8')">
+    <input type="button" value="9" onclick="calculator('9')">
+    <input type="button" value="*" onclick="calculator('*')"><br>
+    <input type="button" value="C" onclick="clearResult()">
+    <input type="button" value="0" onclick="calculator('0')">
+    <input type="button" value="=" onclick="calculateResult()">
+    <input type="button" value="/" onclick="calculator('/')"><br>
+  </body>
+</html>
